@@ -1,8 +1,11 @@
+<div class="container">
+<h2>Personal Record Lifts</h1>
 <% @personal_records.each do |personal_record|%>
-  <div>
-    <h1><%= personal_record.exercise %></h1>
+  <div class="col-xs-10 col-xs-offset-1">
+    <h3><%= personal_record.exercise %></h1>
     <p><%= personal_record.weight %> kg</p><br />
     <p><%= personal_record.date %></p><br />
   </div>
 <hr/>
 <% end %>
+</div>

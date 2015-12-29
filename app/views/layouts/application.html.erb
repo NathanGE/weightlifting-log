@@ -10,11 +10,10 @@
 <body>
   <header class="jumbotron">
     <div class="col-xs-6">
-      Weightlifting Log      
+      <%= link_to 'Weightlifting Log', root_path %>
     </div>
-    <div class="links">
-      <%= link_to 'Add a Workout', '#' %>
-      <%= link_to 'New PR', '#' %>
+    <div class="col-xs-6">
+      <%= link_to 'Add a PR Lift', new_personal_record_path %>
     </div>
   </header>
 
