@@ -7,7 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <div class="col-xs-6">
+      Weightlifting Log      
+    </div>
+    <div>
+      <%= link_to 'Add a Workout', '#' %>
+      <%= link_to 'New PR', '#' %>
+    </div>
+  </header>
 
+  <br class="clear"/>
 <%= yield %>
 
 </body>
