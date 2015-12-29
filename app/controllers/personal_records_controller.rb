@@ -9,7 +9,10 @@ class PersonalRecordsController < ApplicationController
   end
 
   def create
-    PersonalRecord.create(personal_record_params)
+    @personal_record = PersonalRecord.create(personal_record_params)
+    if @personal_record.invalid?
+      flash[:error] = '<strong>Could not save:</strong> The data you entered is invalid.'
+    end
     redirect_to root_path
   end
 
