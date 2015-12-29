@@ -1,0 +1,10 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <h1>Enter the New PR Details</h1>
+  <%= simple_form_for @personal_record do |f| %>
+    <%= f.input :exercise %>
+    <%= f.input :weight %>
+    <%= f.input :date %>
+    <br/>
+    <%= f.submit 'Create' %>
+<% end %>
+</div>
